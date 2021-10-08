@@ -41,7 +41,7 @@
 
 h1 {
   font-family: var(--ff-headerBlack);
-  font-size: clamp(3.5rem, 25vw, 7rem);
+  font-size: clamp(2.5rem, 25vw, 6rem);
 }
 
 h2 {
@@ -75,7 +75,7 @@ header {
 
 nav {
   width: 20vw;
-  min-width: 18rem;
+  min-width: 30rem;
   display: flex;
   justify-content: space-evenly;
   align-self: center;
@@ -142,7 +142,7 @@ section {
 .hero div {
   position: absolute;
   min-width: 50rem;
-  padding: 6.5rem;
+  padding: 8rem;
   display:flex;
   flex-direction: column;
 }
@@ -192,8 +192,18 @@ section {
 .hero img {
   width: 50rem;
   position: absolute;
-  right: 10rem;
+  right: 16rem;
   top: 9rem;
+}
+
+/* SECTION 2 */
+
+.section2 svg {
+  float: left;
+  margin-left: -450px;
+  margin-top: -200px;
+  z-index: 0;
+  width: 1800px;
 }
 
 /* FOOTER */
@@ -231,7 +241,7 @@ footer div {
 
 .socials svg {
   fill: #ffffff;
-  width: 2.7rem;
+  width: 3rem;
   padding: 0.5rem;
 }
 
@@ -430,10 +440,10 @@ footer div {
 
 
 
-@media screen and (max-width: 980px) {
-  /* .hero img {
+@media screen and (min-width: 830px) and (max-width: 980px) {
+  .hero img {
     display: none;
-  } */
+  }
 }
 
 @media screen and (max-width: 1106px) {
@@ -445,12 +455,12 @@ footer div {
   }
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 830px) and (max-width: 1300px) {
   html{
    font-size: 10px;
   }
   nav a {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -464,11 +474,14 @@ footer div {
   html{
    font-size: 13px;
   }
+  nav a {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 1800px) {
   html{
-   font-size: 15px;
+   font-size: 14px;
   }
 }
 
