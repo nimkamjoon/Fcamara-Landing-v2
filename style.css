@@ -58,7 +58,11 @@ p {
 /* HEADER */
 
 header {
-  background-color: var(--clr-mainShade);
+  background-color: rgba(208, 56, 0, 0);
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+
   height: 4.2rem;
   width: 100%;
   display: flex;
@@ -90,7 +94,10 @@ nav a:hover {
 header svg {
   align-self: center;
   margin-left: 2rem;
-  fill: var(--clr-mainShade)
+  fill: var(--clr-mainShade);
+  -webkit-transition: fill 250ms linear;
+  -ms-transition: fill 250ms linear;
+  transition: fill 250ms linear;
 }
 
 section {
@@ -104,6 +111,20 @@ section {
 .menuBlock {
   visibility: hidden;
   opacity: 0;
+}
+
+.changeColor {
+  background-color: rgba(208, 56, 0, 1);
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.changeColor svg {
+  fill: #ffffff;
+  -webkit-transition: fill 250ms linear;
+  -ms-transition: fill 250ms linear;
+  transition: fill 250ms linear;
 }
 
 /* HERO */
@@ -234,7 +255,6 @@ footer div {
   /* HEADER */
 
   header {
-    background-color: var(--clr-accent);
     height: 2.8rem;
   }
 
@@ -261,7 +281,7 @@ footer div {
   .menuBlock {
     opacity: 0;
     transition:opacity 0.2s linear;
-    background-color: rgb(28, 14, 110);
+    background-color: var(--clr-mainShade);
     position: fixed;
     height: 2.8rem;
     margin-top: 2.8rem;

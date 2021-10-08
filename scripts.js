@@ -17,3 +17,16 @@ function showMenu() {
         menu.style.visibility = 'visible';
     }
 }
+
+window.onscroll = function() {changeHeader()};
+
+function changeHeader() {
+    let header = document.getElementById('header');
+
+    if (document.body.scrollTop >= header.offsetHeight || document.documentElement.scrollTop >= header.offsetHeight) {
+        header.className = 'changeColor';
+    }
+    else {
+       header.className = '';
+    }
+}
