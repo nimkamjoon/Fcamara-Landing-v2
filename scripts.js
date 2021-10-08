@@ -1,3 +1,5 @@
+// OPEN AND CLOSE HAMBURGUER MENU ON MOBILE
+
 let button = document.getElementById("menuIcon");
 let menu = document.getElementById("menuBlock");
 
@@ -17,6 +19,8 @@ function showMenu() {
         menu.style.visibility = 'visible';
     }
 }
+
+// TRANSITION HEADER BACKGROUND COLOR ON WINDOW SCROLL
 
 window.onscroll = function() {changeHeader()};
 

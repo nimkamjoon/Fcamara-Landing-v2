@@ -35,7 +35,9 @@
   overflow-x: hidden;
   position: relative;
   width: 100%;
+  
 }
+
 
 h1 {
   font-family: var(--ff-headerBlack);
@@ -130,9 +132,10 @@ section {
 /* HERO */
 
 .hero svg {
-  position: absolute;
-  top: -65%;
-  right: -49.8%;
+  width: 1300px;
+  float: right;
+  margin-top: -550px;
+  margin-right: -400px;
   z-index: 0;
 }
 
@@ -250,12 +253,14 @@ footer div {
   font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 700px) {
+
+
+@media only screen and (max-width: 830px) {
 
   /* HEADER */
 
   header {
-    height: 2.8rem;
+    height: 4.2rem;
   }
 
   nav {
@@ -263,13 +268,14 @@ footer div {
   }
 
   header svg {
+    height: 3rem;
     align-self: center;
-    margin-left: 1rem;
+    margin-left: -1rem;
     fill: var(--clr-mainShade)
   }
 
   .menuIcon {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     display: inline;
   }
 
@@ -283,10 +289,57 @@ footer div {
     transition:opacity 0.2s linear;
     background-color: var(--clr-mainShade);
     position: fixed;
-    height: 2.8rem;
-    margin-top: 2.8rem;
+    height: 4.2rem;
+    margin-top: 4.2rem;
     width: 100%;
+    z-index: 998;
     display: flex;
+  }
+
+  /* HERO */
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero div{
+    text-align: center;
+    min-width: none;
+    width: 95vw;
+    max-width: 30rem;
+  }
+
+  .hero h1 {
+    font-size: 4.3rem;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .hero p, h1, h2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 0.3rem;
+    border-radius: 0.6rem;
+    padding: 0.3rem;
+  }
+
+  .narrow {
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 2rem;
+    width: 17rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--ff-headerBold);
+    padding: 1.5rem;
+    background-color: var(--clr-mainShade);
+    border-radius: 10rem;
+    align-self: center;
   }
 
   /* FOOTER */
@@ -322,5 +375,58 @@ footer div {
   .right h2{
     font-size: 1.6rem;
     text-align: center;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 830px) {
+  html{
+   font-size: 8px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  html{
+   font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html{
+   font-size: 11.5px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html{
+   font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  html{
+   font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .hero svg {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .hero svg {
+    width: 800px;
+    float: right;
+    margin-top: -155px;
+    margin-right: -500px;
+    transform: rotate(90deg);
+    z-index: 0;
   }
 }
