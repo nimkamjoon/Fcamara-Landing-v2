@@ -189,6 +189,13 @@ section {
   color: #ffffff;
 }
 
+.hero img {
+  width: 50rem;
+  position: absolute;
+  right: 10rem;
+  top: 9rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -253,9 +260,13 @@ footer div {
   font-size: 2.5rem;
 }
 
-
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 830px) {
+
+  html{
+    font-size: 8px;
+  }
 
   /* HEADER */
 
@@ -265,6 +276,10 @@ footer div {
 
   nav {
     display: none;
+  }
+  
+  nav a {
+    font-size: 12px;
   }
 
   header svg {
@@ -309,6 +324,15 @@ footer div {
     max-width: 30rem;
   }
 
+  .hero svg {
+    width: 800px;
+    float: right;
+    margin-top: -155px;
+    margin-right: -500px;
+    transform: rotate(90deg);
+    z-index: 0;
+  }
+
   .hero h1 {
     font-size: 4.3rem;
   }
@@ -323,6 +347,7 @@ footer div {
     border-radius: 0.6rem;
     padding: 0.3rem;
   }
+
 
   .narrow {
     width: 100%;
@@ -342,10 +367,19 @@ footer div {
     align-self: center;
   }
 
+  .hero img {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin-top: 33.5rem;
+  }
+
   /* FOOTER */
 
   footer {
-    height: 22rem;
+    height: 26rem;
     max-width: 100%;
     flex-direction: column;
   }
@@ -361,11 +395,16 @@ footer div {
   }
   
   .left svg {
-    max-width: 12rem;
+    max-width: 18rem;
   }
   
   .socials {
-    padding-top: 0.5rem;
+    padding-top: 0.1rem;
+  }
+
+  .socials svg {
+    width: 4rem;
+    margin: 0.2rem;
   }
 
   .right {
@@ -373,26 +412,45 @@ footer div {
   }
   
   .right h2{
-    font-size: 1.6rem;
+    background: none;
+    font-size: 2.5rem;
     text-align: center;
   }
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 830px) {
+@media screen and (min-width: 560px) and (max-width: 830px) {
   html{
-   font-size: 8px;
+    font-size: 10px;
   }
 
-  nav a {
-    font-size: 12px;
+  header svg {
+    margin-left: 1rem;
+  }
+}
+
+
+
+@media screen and (max-width: 980px) {
+  /* .hero img {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 1106px) {
+  .hero img {
+    width: 40rem;
+    position: absolute;
+    right: 10rem;
+    top: 14rem;
   }
 }
 
 @media screen and (min-width: 830px) {
   html{
    font-size: 10px;
+  }
+  nav a {
+    font-size: 12px;
   }
 }
 
@@ -414,19 +472,14 @@ footer div {
   }
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1380px) {
   .hero svg {
     width: 1000px;
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1090px) {
   .hero svg {
-    width: 800px;
-    float: right;
-    margin-top: -155px;
-    margin-right: -500px;
-    transform: rotate(90deg);
-    z-index: 0;
+    width: 1000px;
   }
 }
