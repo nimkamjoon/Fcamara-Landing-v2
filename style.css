@@ -31,6 +31,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .site {
   overflow-x: hidden;
   position: relative;
@@ -204,6 +208,28 @@ section {
   margin-top: -200px;
   z-index: 0;
   width: 1800px;
+}
+
+.arrow {
+  width: 40px;
+}
+
+.glide__slide img {
+  border: 10px solid #303033;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.carouselWrapper {
+  padding-bottom: 30px;
+  width: 50vw;
+  display: flex;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* FOOTER */

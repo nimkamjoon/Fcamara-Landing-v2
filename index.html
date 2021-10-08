@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.css">
 </head>
 <body>
   <div class="site">
@@ -45,7 +45,7 @@
         <a href="" class="navLink">Agende seu retorno</a>
       </nav>
     </div>
-    <section class="hero">
+    <section class="hero" id="hero">
       <svg viewBox="217.009 -269.04 709.764 621.086" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
         <defs>
           <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="-17.263" y1="-457.481" x2="-17.263" y2="540.692" gradientTransform="matrix(0.997258, -0.073996, 0.031518, 0.424783, -148.832649, 77.711744)" xlink:href="#gradient-2"/>
@@ -61,18 +61,31 @@
         <h2>#SangueLaranja</h2>
         <p class="narrow">Estamos muito felizes em anunciar a reabertura dos escritórios.</p>
         <p class="narrow">Preparamos tudo para que os nossos colaboradores, caso optem pelo retorno à empresa, sejam recebidos com segurança e cuidado!</p>
-        <a class='button' href="">Saiba Mais</a>
+        <a class='button' href="#section2">Saiba Mais</a>
       </div>
       <img src="assets/illustration-hero.svg" alt="">
     </section>
-    <section class='section2'>
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">0</li>
-            <li class="glide__slide">1</li>
-            <li class="glide__slide">2</li>
-          </ul>
+    <section class='section2' id="section2">
+      <div class="carouselWrapper">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="assets/slide-img1.svg" alt=""></li>
+              <li class="glide__slide"><img src="assets/slide-img2.svg" alt=""></li>
+              <li class="glide__slide"><img src="assets/slide-img3.svg" alt=""></li>
+              <li class="glide__slide"><img src="assets/slide-img4.svg" alt=""></li>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="assets/slide-arrow-left.svg" alt="" class="arrow"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="assets/slide-arrow-right.svg" alt="" class="arrow"></button>
+          </div>
         </div>
       </div>
       <svg viewBox="24.563 58.257 503.449 342.744" xmlns="http://www.w3.org/2000/svg">
@@ -116,5 +129,15 @@
     </footer>
   </div>
   <script src="scripts.js"></script>
+
+  <script src="node_modules/@glidejs/glide/dist/glide.js"></script>
+  <script>
+    const config = {
+      type: 'slider',
+      autoplay: 3000,
+      hoverpause: true,
+    }
+    new Glide('.glide', config).mount()
+  </script>
 </body>
 </html>
