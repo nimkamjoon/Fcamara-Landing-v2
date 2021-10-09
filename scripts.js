@@ -60,7 +60,7 @@ let glideSlideImg = [
 
 function switchImgs(windowRes) {
     if (windowRes.matches) {
-        for (i = 0; i < glideSlide.length; i++) {
+        for (let i = 0; i < glideSlide.length; i++) {
             glideSlide[i].innerHTML = glideSlideImg[i];
         }
     }
