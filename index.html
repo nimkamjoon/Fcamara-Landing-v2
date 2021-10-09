@@ -51,7 +51,7 @@
           <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="-17.263" y1="-457.481" x2="-17.263" y2="540.692" gradientTransform="matrix(0.997258, -0.073996, 0.031518, 0.424783, -148.832649, 77.711744)" xlink:href="#gradient-2"/>
           <linearGradient id="gradient-2" bx:pinned="true">
             <stop offset="0" style="stop-color: rgb(254, 68, 0);"/>
-            <stop offset="1" style="stop-color: rgb(254, 68, 0);"/>
+            <stop offset="1" style="stop-color: rgba(254, 68, 0, 0.8);"/>
           </linearGradient>
         </defs>
         <path d="M 339.193 -524.055 C 447.493 -520.355 569.093 -481.155 590.693 -398.955 C 612.293 -316.855 533.793 -191.855 486.993 -93.855 C 440.293 4.145 425.293 75.145 402.493 155.245 C 379.793 235.345 349.293 324.545 287.793 390.245 C 226.293 455.945 133.793 498.045 64.093 458.545 C -5.607 419.045 -52.507 297.845 -136.607 245.245 C -220.807 192.745 -342.207 208.645 -423.707 168.045 C -505.307 127.445 -547.007 30.345 -546.307 -66.455 C -545.607 -163.155 -502.407 -259.555 -437.307 -328.655 C -372.207 -397.755 -285.207 -439.755 -201.807 -457.755 C -118.407 -475.755 -38.507 -469.755 48.793 -482.755 C 136.093 -495.755 230.993 -527.655 339.193 -524.055" style="fill: url(#gradient-2-0);" transform="matrix(0.622223, 0, 0, 0.622223, 556.93927, 57.214439)"/>
@@ -66,14 +66,18 @@
       <img src="assets/illustration-hero.svg" alt="">
     </section>
     <section class='section2' id="section2">
+      <div class="text">
+        <p>Com a Pandemia da Covid-19, muita coisa mudou. Porém, hoje com a vacinação em andamento, já podemos enxergar novas possibilidades, e aqui na <span class="accent">FCamara</span> não é diferente.</p>
+        <p>Sabemos que nao será como antes, e por isso planejamos uma série de medidas para garantir a sua segurança. Confira:</p>
+      </div>
       <div class="carouselWrapper">
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide"><img src="assets/slide-img1.svg" alt=""></li>
-              <li class="glide__slide"><img src="assets/slide-img2.svg" alt=""></li>
-              <li class="glide__slide"><img src="assets/slide-img3.svg" alt=""></li>
-              <li class="glide__slide"><img src="assets/slide-img4.svg" alt=""></li>
+              <li class="glide__slide"><img src="assets/slide-img1.svg" alt="Será medida a temperatura ao chegar no escritório."></li>
+              <li class="glide__slide"><img src="assets/slide-img2.svg" alt="Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios."></li>
+              <li class="glide__slide"><img src="assets/slide-img3.svg" alt="Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário."></li>
+              <li class="glide__slide"><img src="assets/slide-img4.svg" alt="Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa."></li>
             </ul>
           </div>
           <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -136,6 +140,7 @@
       type: 'slider',
       autoplay: 3000,
       hoverpause: true,
+      focusAt: 'center'
     }
     new Glide('.glide', config).mount()
   </script>
