@@ -259,6 +259,7 @@ section {
 .title {
   font-size: 2.7rem;
   color: var(--clr-accent);
+  
 }
 
 /* SECTION 3 */
@@ -281,7 +282,7 @@ section {
   z-index: 70;
 }
 
-.wrapper-section3 h2, p {
+.wrapper-section3 h2, .wrapper-section3 p {
   margin: 1.7rem 0;
   padding: 0.5rem;
   border-radius: 5px;
