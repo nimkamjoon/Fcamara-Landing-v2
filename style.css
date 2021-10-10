@@ -16,7 +16,6 @@
   --clr-main: #fe4400;
   --clr-mainShade: #d03800;
   --clr-accent: #36357E;
-  --clr-circles: #f73900;
   --clr-decor: #f97249;
 
   --ff-primary: 'Montserrat', sans-serif;
@@ -39,6 +38,12 @@ html {
   overflow-x: hidden;
   position: relative;
   width: 100%;
+}
+
+.site:not(footer header) {
+  background-image: url(assets/page-bg.svg);
+  background-size: 25%;
+  background-position: center;
 }
 
 
@@ -232,11 +237,11 @@ section {
   justify-content: space-evenly;
   line-height: 2.7rem;
   color: #ffffff;
-  margin-top: -23vh;
+  margin-top: -18vh;
 }
 
 .arrow {
-  width: 40px;
+  width: 30px;
 }
 
 .glide__slide img {
@@ -251,16 +256,26 @@ section {
   z-index: 60;
 }
 
+.title {
+  font-size: 2.7rem;
+  color: var(--clr-accent);
+}
+
 /* SECTION 3 */
 
-/* FOOTER */
+.section3 {
+  background-image: url(assets/blob-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
 
-/* footer::before {
-  content: url(assets/blob-bottom.svg);
-  width: 100vw;
-  left: 0;
-  top: 0;
-} */
+/* FOOTER */
 
 footer {
   background-color: #303033;
@@ -330,6 +345,10 @@ footer div {
 
   html{
     font-size: 8px;
+  }
+
+  .site:not(footer header) {
+    background-size: 75%;
   }
 
   /* HEADER */
@@ -406,7 +425,7 @@ footer div {
     font-size: 3rem;
   }
 
-  .hero p, h1, h2 {
+  p, h1, h2 {
     background-color: rgba(255, 255, 255, 0.2);
     margin-top: 0.3rem;
     border-radius: 0.6rem;
@@ -448,6 +467,24 @@ footer div {
 
   /* SECTION 2 */
 
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    width: 100vw;
+    max-width: 48rem;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(0, -40%);
+    transform: translate(0, -40%);
+  }
+
   .section2 svg {
     margin-left: -460px;
     margin-top: -120px;
@@ -468,15 +505,18 @@ footer div {
     display: flex;
     align-content: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 49.3%;
+    -webkit-transform: translate(0, -49.3%);
+    transform: translate(0, -49.3%);
     z-index: 50;
   }
 
   .glide__slide img {
     width: 100%;
+  }
+
+  .title {
+    font-size: 2.8rem;
   }
 
   /* FOOTER */
@@ -541,7 +581,7 @@ footer div {
 
 @media screen and (max-width: 1106px) {
   .hero img {
-    width: 40rem;
+    width: 45rem;
     position: absolute;
     right: 10rem;
     top: 14rem;

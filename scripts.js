@@ -35,7 +35,7 @@ function changeHeader() {
     }
 }
 
-// ADAPT SLIDER ON SECTION 2 FOR SMALL SCREENS 
+// ADAPT SECTION 2 FOR SMALL SCREENS 
 
 let windowRes = window.matchMedia("(max-width: 830px)");
 
@@ -64,7 +64,16 @@ function switchImgs(windowRes) {
             glideSlide[i].innerHTML = glideSlideImg[i];
         }
     }
-}
+};
+
+let text = document.querySelector('#hide-mobile');
+
+function hideText(windowRes) {
+    if (windowRes.matches) {
+        text.style.display = 'none';
+    }
+};
 
 hideGlideArrows(windowRes);
 switchImgs(windowRes);
+hideText(windowRes);
