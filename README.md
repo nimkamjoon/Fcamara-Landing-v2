@@ -1,12 +1,12 @@
 ## FCamara | Landing Page
 
-Landing page criada com o intuito de informar os colaboradores da <b>FCamara</b> sobre o a reabertura da empresa, e sobre as diretrizes adotadas para garantir a segurança dos mesmos nesse retorno.
+Landing page criada com o intuito de informar os colaboradores da <b>FCamara</b> sobre a reabertura da empresa, e sobre as diretrizes adotadas para garantir a segurança dos mesmos neste retorno.
 
-Projeto desenvolvido para o de <b>FCamara | Imersão DEV Alura</b>. 
+Projeto desenvolvido para o desafio <b>FCamara | Imersão DEV Alura</b>. 
 
 ## 💻 Demonstração 
 
-![App Screenshot](https://i.postimg.cc/5tSRM8jQ/final-6163a608a274ec008c758c45-411300.gif)
+![App Screenshot](assets/screenshots.gif)
 
 <p align="center"><a href="https://kind-booth-c3fdaf.netlify.app"><b>🧡 Clique aqui para testar! 🧡</b></a></p>
   
@@ -25,4 +25,4 @@ Projeto desenvolvido para o de <b>FCamara | Imersão DEV Alura</b>.
 
 ## 🔅 Autor
 
-- [@nimkamjoon | J. Ernst](https://www.github.com/octokatherine) 
+- [@nimkamjoon | J. Ernst](https://www.github.com/nimkamjoon) 
